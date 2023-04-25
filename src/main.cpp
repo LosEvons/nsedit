@@ -3,14 +3,39 @@
 
 #include "Logger.hpp"
 
+void create(char* filename) {
+	std::ofstream file;
+	file.open(filename);
+	Logger::Inform("Succesfully created ", filename);
+	file.close();
+}
+
 void open(char* filename) {
+	char op;
 	std::ifstream file(filename);
-	if (file.fail())
-		Logger::Error("File does not exist, or is outside this programs permissions.");
+	if (file.fail()) {
+		Logger::Warn("File does not exist, or is outside this programs permissions.");
+		Logger::Notify("Would you like to create ", filename, "? (y/n)");
+		std::cin >> op;
+		if (op == 'y' || op == 'Y') {
+			Logger::Inform("Creating ", filename);
+			file.close();
+			create(filename);
+			return;
+		}
+		else if (op == 'n' || op == 'N') {
+			file.close();
+			Logger::Error("Failed to obtain a suitable file to edit.");
+		}
+		else {
+			file.close();
+			Logger::Error("Invalid response.");
+		}
+	}
+		
 	std::cout << file.rdbuf();
-	
-	int op;
 	std::cin >> op;
+	file.close();
 	return;
 }
 
