@@ -1,6 +1,5 @@
 # ninja log v5
-1	786	1682418631472580500	CMakeFiles/fortress.dir/src/main.cpp.o	3fb4fabeaff57085
 786	1047	1682418631732580500	fortress	aa3d966a5f0dc560
-0	369	1682418631062580500	CMakeFiles/fortress.dir/src/Board.cpp.o	f194343fc4e39a30
-1	275	1682414967255897900	CMakeFiles/fortress.dir/src/Creature.cpp.o	6f55594ec1fcb495
-0	88	1682418630772580500	CMakeFiles/fortress.dir/src/Entity.cpp.o	55e793bd6cca250f
+735	892	1682428577192514300	libeditor.a	8da2204dea3cbed3
+1	732	1682428705892514300	CMakeFiles/nsedit.dir/src/main.cpp.o	185ce6941800f78e
+732	772	1682428705922514300	libnsedit.a	e703275d03e32f62

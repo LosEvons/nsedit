@@ -1,6 +1,0 @@
-"/home/emil/CPP/fortress/src/Entity.cpp:7: style: The function 'overlap' is never used.
-
-^"
-"/home/emil/CPP/fortress/src/Entity.cpp:3: style: The function 'render' is never used.
-
-^"

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.22.1)
-project(fortress)
+project(nsedit)
 set(CMAKE_CXX_STANDARD 23)
 
 find_program(CMAKE_CXX_CPPCHECK NAMES cppcheck)
@@ -24,7 +24,9 @@ find_package(Curses REQUIRED)
 include_directories(${CURSES_INCLUDE_DIR})
 
 include_directories("./include")
-file(GLOB_RECURSE fortress_SOURCES src/*.cpp)
+file(GLOB_RECURSE SOURCES src/*.cpp)
 
-add_executable(fortress ${fortress_SOURCES})
-target_link_libraries(fortress ${CURSES_LIBRARY})
+add_executable(nsedit ${SOURCES})
+target_link_libraries(nsedit ${CURSES_LIBRARY})
+
+install(TARGETS nsedit DESTINATION bin)
