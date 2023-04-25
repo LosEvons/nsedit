@@ -1,0 +1,6 @@
+# ninja log v5
+1	786	1682418631472580500	CMakeFiles/fortress.dir/src/main.cpp.o	3fb4fabeaff57085
+786	1047	1682418631732580500	fortress	aa3d966a5f0dc560
+0	369	1682418631062580500	CMakeFiles/fortress.dir/src/Board.cpp.o	f194343fc4e39a30
+1	275	1682414967255897900	CMakeFiles/fortress.dir/src/Creature.cpp.o	6f55594ec1fcb495
+0	88	1682418630772580500	CMakeFiles/fortress.dir/src/Entity.cpp.o	55e793bd6cca250f

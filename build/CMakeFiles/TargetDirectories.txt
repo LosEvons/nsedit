@@ -1,0 +1,3 @@
+/home/emil/CPP/fortress/build/CMakeFiles/fortress.dir
+/home/emil/CPP/fortress/build/CMakeFiles/edit_cache.dir
+/home/emil/CPP/fortress/build/CMakeFiles/rebuild_cache.dir
